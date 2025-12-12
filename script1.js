@@ -5,7 +5,7 @@ function check(){
     var inp=inp_field.value;
 
     if (inp=="seven"){
-        window.location.href="./seven.html";
+        window.location.href="./2_seven.html";
     }else{
         window.alert("wrong answer!")
     }
