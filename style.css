@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: greenyellow;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+input{
+    background-color: black;
+    border-width: 4px;
+    border-color: greenyellow;
+    border-radius: 3px;
+    color: greenyellow;
+}
+
+button{
+    background-color: greenyellow;
+    border: 4px;
+    border-color: greenyellow;
+    border-radius: 3px;
+    color: black;
+}
