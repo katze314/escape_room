@@ -2,8 +2,10 @@
 let pos = (1<<5) - 1;
 let pos_new = 0;
 
+var trys=0;
 
 function box(i){
+    trys++;
     if (pos==1<<(i-1)){
         window.location.href="./3_parity.html";
     }else{
@@ -32,4 +34,5 @@ function box(i){
         document.getElementById("text").innerHTML="the working button was not button number " + i;
 
     }
+    document.getElementById("trys").innerHTML=trys + " trys so far";
 }
