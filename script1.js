@@ -7,7 +7,7 @@ function check(){
     if (inp=="seven"){
         window.location.href="./seven.html";
     }else{
-        
+        window.alert("wrong answer!")
     }
 
 }
