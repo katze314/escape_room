@@ -1,5 +1,4 @@
 var inp = document.getElementById("input");
-
 inp.addEventListener("keypress", function (e) {
     if (e.key === "Enter") {
         document.getElementById("btn").click();
@@ -34,8 +33,10 @@ function check(){
         if(hint_given[i]==false){
             for(let j=0; j<4; j++){
                 if (last_guess[j]==correct[i]&&next_hint[j]==0){
+                    if(hint_given[i]==false){
                     next_hint[j]=1;
                     hint_given[i]=true;
+                    }
                 }
             }
         }
