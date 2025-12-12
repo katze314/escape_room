@@ -6,8 +6,10 @@ inp.addEventListener("keypress", function (e) {
     }
 });
 
+var trys=0;
 
 function check(){
+    trys++;
     var inp_field=document.getElementById("input1");
     var inp=inp_field.value;
 
@@ -17,5 +19,6 @@ function check(){
         window.alert("wrong answer! The number of e's on the website changes if you type in an e")
         inp_field.value="";
     }
+    document.getElementById("trys").innerHTML=trys + " trys so far";
 
 }

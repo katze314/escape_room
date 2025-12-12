@@ -6,6 +6,7 @@ inp.addEventListener("keypress", function (e) {
     }
 });
 
+var trys=0;
 
 var all_guesses="";
 var last_guess="";
@@ -13,6 +14,7 @@ var correct="1434";
 const classes=["false","semi","full"];
 
 function check(){
+    trys++;
     const next_hint=[0,0,0,0];
     const hint_given=[false,false,false,false];
     last_guess=document.getElementById("input").value;
@@ -44,4 +46,5 @@ function check(){
     all_guesses+="<br>";
     document.getElementById("guessed").innerHTML=all_guesses;
     document.getElementById("input").value="";
+    document.getElementById("trys").innerHTML=trys + " trys so far";
 }
