@@ -5,7 +5,7 @@ let pos_new = 0;
 
 function box(i){
     if (pos==1<<(i-1)){
-        window.location.href="./riddle3.html";
+        window.location.href="./3_parity.html";
     }else{
         pos_new=0;
         if((pos & 1<<(i-1))>0){
