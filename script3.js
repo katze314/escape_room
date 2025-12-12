@@ -1,3 +1,12 @@
+var inp = document.getElementById("input");
+
+inp.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+        document.getElementById("btn").click();
+    }
+});
+
+
 var all_guesses="";
 var last_guess="";
 var correct="1434";
@@ -17,7 +26,7 @@ function check(){
         }
     }
     if(all_true==true){
-        window.location.href="./4.html";
+        window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D";
     }
     for(let i=0; i<4; i++){
         if(hint_given[i]==false){
@@ -34,5 +43,5 @@ function check(){
     }
     all_guesses+="<br>";
     document.getElementById("guessed").innerHTML=all_guesses;
-
+    document.getElementById("input").value="";
 }
